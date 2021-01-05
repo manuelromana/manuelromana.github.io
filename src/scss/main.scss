@@ -6,27 +6,35 @@ body {
   margin: 0;
 }
 main {
-  height: 80vh;
+  // height: 80vh;
   width: 80%;
   margin: auto;
   margin-top: 6rem;
-
+  .section {
+    height: 70vh;
+  }
   #home {
-    height: 100%;
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 35% 65%;
     grid-template-rows: 15% auto;
     grid-template-areas:
       'aside home-header'
       'aside home-photo';
     aside {
-      //   height: 100%;
+      #aside-title {
+        text-align: center;
+        margin-bottom: 3.5rem;
+        color: blanchedalmond;
+      }
       background: black;
       grid-area: aside;
     }
     #home-header {
       background: rgb(170, 158, 158);
       grid-area: home-header;
+      display: flex;
+      padding-right: 1rem;
+      justify-content: flex-end;
     }
     #home-photo {
       //   height: 100%;
@@ -35,5 +43,38 @@ main {
       background-size: cover;
       grid-area: home-photo;
     }
+  }
+  #about {
+    #about-wrapper {
+      display: flex;
+      background: white;
+      justify-content: space-between;
+      height: 100%;
+      margin: 3rem 1rem;
+    }
+    #about-photo {
+      margin: 2rem;
+      width: 50%;
+      background: url(../images/colroule.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: -20px -20px 1px black;
+    }
+    #about-content {
+      margin: 2rem;
+      width: 50%;
+      background: black;
+    }
+  }
+}
+
+#svg-list {
+  display: flex;
+  .svg-container {
+    height: 2rem;
+    width: 2rem;
+    // background: white;
+    margin: 0.5rem;
   }
 }
