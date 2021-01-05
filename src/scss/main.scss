@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+main {
+  height: 80vh;
+  width: 80%;
+  margin: auto;
+  margin-top: 6rem;
+
+  #home {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 15% auto;
+    grid-template-areas:
+      'aside home-header'
+      'aside home-photo';
+    aside {
+      //   height: 100%;
+      background: black;
+      grid-area: aside;
+    }
+    #home-header {
+      background: rgb(170, 158, 158);
+      grid-area: home-header;
+    }
+    #home-photo {
+      //   height: 100%;
+      background: url(../images/touffe.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-area: home-photo;
+    }
+  }
+}

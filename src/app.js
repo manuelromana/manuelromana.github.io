@@ -1,1 +1,1 @@
-console.log("manu")
+import './scss/main.scss';
