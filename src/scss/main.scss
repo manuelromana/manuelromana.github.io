@@ -4,6 +4,20 @@
 
 body {
   margin: 0;
+  background: url(../images/trees.jpg) center/cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // filter: grayscale(45%);
+}
+
+#background {
+  background: url(../images/trees.jpg) center/cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  filter: grayscale(45%);
 }
 main {
   // height: 80vh;
@@ -11,7 +25,7 @@ main {
   margin: auto;
   margin-top: 6rem;
   .section {
-    height: 70vh;
+    height: 80vh;
   }
   #home {
     display: grid;
@@ -37,7 +51,7 @@ main {
       justify-content: flex-end;
     }
     #home-photo {
-      //   height: 100%;
+      // height: 100%;
       background: url(../images/touffe.jpg);
       background-repeat: no-repeat;
       background-size: cover;
@@ -45,16 +59,17 @@ main {
     }
   }
   #about {
-    #about-wrapper {
-      display: flex;
-      background: white;
-      justify-content: space-between;
-      height: 100%;
-      margin: 3rem 1rem;
-    }
+    display: flex;
+    background: white;
+    justify-content: space-between;
+    padding: 3rem;
+    padding-top: 4rem;
+    // margin: 3rem 1rem;
+
     #about-photo {
-      margin: 2rem;
-      width: 50%;
+      // margin: 2rem;
+      width: 40%;
+      height: 100%;
       background: url(../images/colroule.jpg);
       background-position: center;
       background-repeat: no-repeat;
@@ -62,8 +77,8 @@ main {
       box-shadow: -20px -20px 1px black;
     }
     #about-content {
-      margin: 2rem;
-      width: 50%;
+      // margin: 2rem;
+      width: 40%;
       background: black;
     }
   }
