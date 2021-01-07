@@ -7,7 +7,12 @@ for (let i = 0; i < 5; i++) {
   circles.push(document.importNode(svgTemplateCircle.content, true));
 }
 
-console.log(circles);
+const circlesHorizontalWrapper = document.createElement('div');
 circles.forEach(circleTemplate => {
-  svgList.append(circleTemplate);
+  circlesHorizontalWrapper.append(circleTemplate);
 });
+
+for (let i = 0; i < 5; i++) {
+  let line = circlesHorizontalWrapper.cloneNode(true);
+  svgList.append(line);
+}
